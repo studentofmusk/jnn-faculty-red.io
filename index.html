@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style/output.css" />
     </head>
 
-<body class="">
+<body class="scroll-smooth">
     <header class="hidden md:flex py-5 items-center justify-between px-[10%] absolute top-0   w-full">
         <div class="w-40 "><img src="title.png" alt="" /></div><button
             class=" flex space-x-2 text-white font-bold uppercase"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -38,20 +38,26 @@
         <div class="flex justify-between h-full w-full lg:flex-row flex-col bg-[#2b8384]">
             <div class="h-3/6 lg:h-full w-full lg:w-3/6 flex flex-col justify-center space-y-12 "><img
                     src="jnn name.png" alt="JNN INSTITUE" class="" />
-                <div class="ml-10 lg:ml-20">
+                <div class="px-6 md:px-0 md:ml-10 lg:ml-20">
                     <div class="text-[17px] md:text-xl text-white capitalize ">transforming education and empowering
                         minds:</div>
                     <div class="text-2xl text-white font-bold capitalize my-5">Join our colleges dedicated team of
-                        educators and Tech Trainers today!</div><a href="/"><button id="btn"
-                            class="hover:text-[#2b8384] border-2 border-white py-2 px-14 rounded-[3px] uppercase text-white text-xl mt-3 ml-2  relative">
-                            <div class="z-10 absolute inset-0 w-0 bg-white"></div>
-                            <div class="relative z-20 ">Apply</div>
-                        </button></a>
+                        educators and Tech Trainers today!</div>
+                        <div class="hidden md:flex section1 cursor-pointer uppercase  text-white " >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-2 w-6 h-6 text-white">
+                                <path fill-rule="evenodd" d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5zm6.61 10.936a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                                <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+                              </svg>
+                              
+                              
+                            <div>Apply now</div>
+
+                            </div>
                 </div>
             </div><img class="lg:h-full lg:w-auto  w-full" src="hero img.jpg" alt="" />
         </div>
     </div>
-    <section id="slide1" class="py-10 md:py-16">
+    <section id="slide1" class="section2 py-10 md:py-16">
         <div class="flex flex-col justify-center items-center h-36">
             <h1 class="text-3xl md:text-5xl font-semibold text-[#001c30] mb-3 md:mb-5">Discover Your Worth</h1>
             <p class="text-[#1b6b93] text-sm w-10/12 mx-auto text-center md:text-lg font-semibold">Explore Existing Job
@@ -122,7 +128,8 @@
     </section>
     <div class="w-full md:mt-10">
         <div class="w-full flex justify-center items-center">
-            <div class="flex justify-between w-10/12 md:w-4/12 "><a href="https://twitter.com/jnninstitute"
+            <div class="flex justify-between w-10/12 md:w-4/12 ">
+                <a href="https://twitter.com/jnninstitute"
                     target="_blank" class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-[#001c30]" tabindex="0"><svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="  w-4 h-4 fill-white">
                         <path
@@ -159,6 +166,51 @@
             <p class="text-white ">©2022 JNN INSTITUTE</p>
         </div>
     </div>
+
+    <script>
+    function smoothScroll(target, duration) {
+    var targetPosition = document.querySelector(target).offsetTop;
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
+
+        function mobileScroll(){
+            document.querySelector('#slide1').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+        }
+
+    function animation(currentTime) {
+        if(startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if(timeElapsed < duration) requestAnimationFrame(animation);
+    }
+    
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+    
+    requestAnimationFrame(animation);
+}
+
+var section1 = document.querySelector('.section1');
+section1.addEventListener('click', function() {
+    smoothScroll('.section2', 1000);
+    
+});
+
+
+</script>
+<!-- Include the polyfill -->
+<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+
 </body>
 
 </html>
