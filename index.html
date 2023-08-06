@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
     <link rel="stylesheet" href="style/output.css" />
-    </head>
+</head>
 
 <body class="scroll-smooth">
+    <!-- Header  -->
     <header class="hidden md:flex py-5 items-center justify-between px-[10%] absolute top-0 bg-[#cc0000]  w-full">
         <div class="w-40 "><img src="title.png" alt="" /></div><button
             class=" flex space-x-2 text-white font-bold uppercase"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -24,8 +25,10 @@
             <p>HR Form</p>
         </button>
     </header>
+
+    <!-- HR Form for Mobile  -->
     <div class="absolute w-full h-full flex md:hidden justify-end items-end"><button
-            class=" flex space-x-2 font-bold bg-white py-2 px-1 transform mr-4 mb-52 translate-x-1/2 rounded-sm -rotate-90 text-[#164b60] uppercase fixed">
+            class=" text-xs flex items-center space-x-1 font-bold bg-white py-1 px-1 transform mr-4 mb-20 translate-x-1/2 rounded-sm -rotate-90 text-[#070A52] uppercase fixed">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -34,6 +37,8 @@
             </svg>
             <p>HR Form</p>
         </button></div>
+
+    <!-- Hero Bar -->
     <div class="w-full bg-[#cc0000] overflow-y-hidden max-h-[180vh] lg:h-[98vh]">
         <div class="flex justify-between h-full w-full lg:flex-row flex-col bg-[#cc0000]">
             <div class="h-3/6 lg:h-full w-full lg:w-3/6 flex flex-col justify-center space-y-12 "><img
@@ -43,24 +48,220 @@
                         minds:</div>
                     <div class="text-2xl text-white font-bold capitalize my-5">Join our colleges dedicated team of
                         educators and Tech Trainers today!</div>
-                        <div class="hidden md:flex section1 cursor-pointer uppercase  text-white " >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-2 w-6 h-6 text-white">
-                                <path fill-rule="evenodd" d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5zm6.61 10.936a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
-                              </svg>
-                              
-                              
-                            <div>Apply now</div>
+                    <div class="hidden md:flex section1 cursor-pointer uppercase  text-white ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="mr-2 w-6 h-6 text-white">
+                            <path fill-rule="evenodd"
+                                d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5zm6.61 10.936a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                clip-rule="evenodd" />
+                            <path
+                                d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
+                        </svg>
 
-                            </div>
+
+                        <div>Apply now</div>
+
+                    </div>
                 </div>
             </div><img class="lg:h-full lg:w-auto  w-full" src="hero img.jpg" alt="" />
         </div>
     </div>
+
+    <!-- Policies -->
+    <!-- Title  -->
+    <div class="flex flex-col justify-center items-center h-36">
+        <h1 class="text-3xl md:text-5xl font-semibold text-[#2E3840] mb-3 md:mb-5">Our Policy</h1>
+        <p class="text-[#776d6d] text-sm w-10/12 mx-auto text-center md:text-lg font-semibold">We are committed to creating a diverse, inclusive, and safe environment for all our employees</p>
+    </div>
+    <!-- Boxes -->
+    <div class="w-full relative z-20 bg-white">
+        <button class="hidden md:block absolute top-1/2 left-8 " onclick="scrollLeftt()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 shadow-lg shadow-gray-500 p-1 rounded-full bg-white"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg></button>
+        <button class="hidden md:block absolute top-1/2 right-8 " onclick="scrollRightt()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 shadow-lg shadow-gray-500 p-1 rounded-full bg-white" >         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg></button>
+
+
+        <div id="scrollSlide" class="rounded-lg scroll-smooth pb-8 md:pb-0 scrollbar-h space-x-2 b-scroll-track b-scroll-thumb w-full md:w-11/12 mx-auto items-center overflow-x-scroll scroll flex scrollbar-w-0">
+            <div
+            class="ml-4 flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+            <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+                src="slide Images/conference.png" alt="" />
+            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+                <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                    Card title
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 ">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="text-xs text-neutral-500 ">
+                    Last updated 3 mins ago
+                </p>
+            </div>
+        </div>
+        <div
+            class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+            <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+                src="slide Images/book.png" alt="" />
+            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+                <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                    Card title
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 ">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="text-xs text-neutral-500 ">
+                    Last updated 3 mins ago
+                </p>
+            </div>
+        </div>
+        <div
+        class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+        <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+            src="slide Images/bookchapter.png" alt="" />
+        <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+            <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 ">
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+            </p>
+            <p class="text-xs text-neutral-500 ">
+                Last updated 3 mins ago
+            </p>
+        </div>
+        </div>
+        <div
+        class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+            <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+                src="slide Images/jouralpublication.png" alt="" />
+            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+                <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                    Card title
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 ">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="text-xs text-neutral-500 ">
+                    Last updated 3 mins ago
+                </p>
+            </div>
+        </div>
+        <div
+        class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+        <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+        src="slide Images/externalfundedproject.png" alt="" />
+        <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+            <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 ">
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+            </p>
+            <p class="text-xs text-neutral-500 ">
+                Last updated 3 mins ago
+            </p>
+        </div>
+        </div>
+        <div
+        class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+        <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+            src="slide Images/facultydevelopmentprograms.png" alt="" />
+        <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+            <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 ">
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+            </p>
+            <p class="text-xs text-neutral-500 ">
+                Last updated 3 mins ago
+            </p>
+        </div>
+        </div>
+        <div
+        class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+        <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+            src="slide Images/industrialconsultancy.png" alt="" />
+        <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+            <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 ">
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+            </p>
+            <p class="text-xs text-neutral-500 ">
+                Last updated 3 mins ago
+            </p>
+        </div>
+        </div>
+        <div
+        class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+            <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+                src="slide Images/mooc.png" alt="" />
+            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+                <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                    Card title
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 ">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="text-xs text-neutral-500 ">
+                    Last updated 3 mins ago
+                </p>
+            </div>
+        </div>
+        <div
+            class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+            <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+                src="slide Images/patent.png" alt="" />
+            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+                <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                    Card title
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 ">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="text-xs text-neutral-500 ">
+                    Last updated 3 mins ago
+                </p>
+            </div>
+        </div>
+        <div
+        class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
+        <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
+            src="slide Images/professionalbodymembership.png" alt="" />
+        <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
+            <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
+                Card title
+            </h5>
+            <p class="mb-4 text-base text-neutral-600 ">
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+            </p>
+            <p class="text-xs text-neutral-500 ">
+                Last updated 3 mins ago
+            </p>
+        </div>
+    </div>
+    
+    
+</div>
+        
+
+
+    </div>
+
     <section id="slide1" class="section2 py-10 md:py-16">
         <div class="flex flex-col justify-center items-center h-36">
             <h1 class="text-3xl md:text-5xl font-semibold text-[#2E3840] mb-3 md:mb-5">Discover Your Worth</h1>
-            <p class="text-[#F15A59] text-sm w-10/12 mx-auto text-center md:text-lg font-semibold">Explore Existing Job
+            <p class="text-[#776d6d] text-sm w-10/12 mx-auto text-center md:text-lg font-semibold">Explore Existing Job
                 Openings That Match your Expertise And Ignite Your Passion</p>
         </div>
         <div class="flex md:justify-evenly items-center space-y-5 md:flex-row flex-col flex-wrap mt-10 mx-auto">
@@ -74,12 +275,13 @@
                     <div>
                         <div class="mb-3 text-[#070A52] text-center text-2xl md:text-3xl font-semibold">Teaching Faculty
                         </div>
-                        <div class="text-[#001c307e] mb-4 text-sm md:text-lg text-center font-semibold">Professor | Associate Professor
+                        <div class="text-[#001c307e] mb-4 text-sm md:text-lg text-center font-semibold">Professor |
+                            Associate Professor
                             Assistant Professor</div>
                     </div>
                     <center>
                         <a class="button-primary px-10 py-2 uppercase " href="teaching-faculty">Apply</a>
-                
+
                     </center>
                 </div>
             </div>
@@ -97,11 +299,12 @@
                     <div>
                         <div class="mb-3 text-[#070A52] text-center text-2xl md:text-3xl font-semibold">INDUSTRY 4.0
                             Exports</div>
-                        <div class="text-[#001c307e] mb-4 text-sm md:text-lg text-center font-semibold">For Technical Training</div>
+                        <div class="text-[#001c307e] mb-4 text-sm md:text-lg text-center font-semibold">For Technical
+                            Training</div>
                     </div>
                     <center>
                         <a class="button-primary px-10 py-2 uppercase " href="/">Apply</a>
-                
+
                     </center>
                 </div>
             </div>
@@ -116,11 +319,12 @@
                     <div>
                         <div class="mb-3 text-[#070A52] text-center text-2xl md:text-3xl font-semibold">Teaching
                             Associates</div>
-                        <div class="text-[#001c307e] mb-4 text-sm md:text-lg text-center font-semibold">Academic | Non Academic</div>
+                        <div class="text-[#001c307e] mb-4 text-sm md:text-lg text-center font-semibold">Academic | Non
+                            Academic</div>
                     </div>
                     <center>
                         <a class="button-primary px-10 py-2 uppercase " href="/">Apply</a>
-                
+
                     </center>
                 </div>
             </div>
@@ -129,86 +333,101 @@
     <div class="w-full md:mt-10">
         <div class="w-full flex justify-center items-center">
             <div class="flex justify-between w-10/12 md:w-4/12 ">
-                <a href="https://twitter.com/jnninstitute"
-                    target="_blank" class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] " tabindex="0"><svg
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="  w-4 h-4 group-hover:fill-white fill-[#070A52]">
+                <a href="https://twitter.com/jnninstitute" target="_blank"
+                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] "
+                    tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="  w-4 h-4 group-hover:fill-white fill-[#070A52]">
                         <path
                             d="M23.954 4.569a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 0 0-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 0 0-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.228-.616v.061a4.923 4.923 0 0 0 3.946 4.827 4.996 4.996 0 0 1-2.212.085 4.937 4.937 0 0 0 4.604 3.417 9.868 9.868 0 0 1-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0 0 7.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 0 0 2.46-2.548z">
                         </path>
                     </svg></a><a href="https://www.facebook.com/jnninstitute/" target="_blank"
-                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] " tabindex="0"><svg
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="  w-4 h-4 group-hover:fill-white fill-[#070A52]">
+                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] "
+                    tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="  w-4 h-4 group-hover:fill-white fill-[#070A52]">
                         <path
                             d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5z">
                         </path>
                     </svg></a><a href="https://www.youtube.com/channel/UCbzxebRE40qBNxoy9Z7e97Q" target="_blank"
-                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] " tabindex="0"><svg
-                        xmlns="http://www.w3.org/2000/svg" class="  w-4 h-4 group-hover:fill-white fill-[#070A52]" viewBox="0 0 32 32">
+                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] "
+                    tabindex="0"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="  w-4 h-4 group-hover:fill-white fill-[#070A52]" viewBox="0 0 32 32">
                         <path
                             d="M31.328 8.271a4.006 4.006 0 0 0-2.787-2.781c-2.495-.667-12.525-.667-12.525-.667S6.005 4.807 3.484 5.49A4.005 4.005 0 0 0 .703 8.271a41.574 41.574 0 0 0-.697 7.745 42.136 42.136 0 0 0 .697 7.708 4.022 4.022 0 0 0 2.781 2.787c2.495.667 12.532.667 12.532.667s10.005 0 12.525-.667a4.023 4.023 0 0 0 2.787-2.787c.459-2.541.683-5.125.667-7.708.016-2.6-.203-5.188-.667-7.745zM12.812 20.803v-9.595l8.349 4.808z">
                         </path>
                     </svg></a><a href="https://www.linkedin.com/school/jnninstitute/" target="_blank"
-                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] " tabindex="0"><svg
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="  w-4 h-4 group-hover:fill-white fill-[#070A52]">
+                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] "
+                    tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="  w-4 h-4 group-hover:fill-white fill-[#070A52]">
                         <path
                             d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
                         </path>
                     </svg></a><a href="https://www.instagram.com/jnninstitute/" target="_blank"
-                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] " tabindex="0"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    class="p-3 rounded-full  shadow-lg shadow-gray-700 bg-white hover:-translate-y-1 hover:scale-105 duration-100 group hover:bg-[#070A52] "
+                    tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                         class="  w-4 h-4 group-hover:fill-white fill-[#070A52]" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
                             d="M7.465 1.066C8.638 1.012 9.012 1 12 1c2.988 0 3.362.013 4.534.066 1.172.053 1.972.24 2.672.511.733.277 1.398.71 1.948 1.27.56.549.992 1.213 1.268 1.947.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12c0 2.988-.013 3.362-.066 4.535-.053 1.17-.24 1.97-.512 2.67a5.396 5.396 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.269-.7.271-1.5.457-2.67.511-1.174.054-1.548.066-4.536.066-2.988 0-3.362-.013-4.535-.066-1.17-.053-1.97-.24-2.67-.511a5.397 5.397 0 0 1-1.949-1.27 5.392 5.392 0 0 1-1.269-1.947c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12c0-2.988.013-3.362.066-4.534.053-1.172.24-1.972.511-2.672a5.396 5.396 0 0 1 1.27-1.948 5.392 5.392 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511zm8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379-.513.2-.88.437-1.265.822a3.412 3.412 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043.176.477.457.91.822 1.265.355.365.788.646 1.265.822.388.151.97.33 2.043.379 1.16.053 1.507.064 4.445.064 2.938 0 3.285-.011 4.445-.064 1.073-.049 1.655-.228 2.043-.379.513-.2.88-.437 1.265-.822.365-.355.646-.788.822-1.265.151-.388.33-.97.379-2.043.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043-.2-.513-.437-.88-.822-1.265a3.413 3.413 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379zm-5.85 12.345a3.669 3.669 0 0 0 4-5.986 3.67 3.67 0 1 0-4 5.986zM8.002 8.002a5.654 5.654 0 1 1 7.996 7.996 5.654 5.654 0 0 1-7.996-7.996zm10.906-.814a1.337 1.337 0 1 0-1.89-1.89 1.337 1.337 0 0 0 1.89 1.89z"
                             clip-rule="evenodd"></path>
-                    </svg></a></div>
+                    </svg></a>
+            </div>
         </div>
         <div class="bg-[#0a0c4e] h-20 mt-5 flex justify-center items-center">
             <p class="text-white ">©2022 JNN INSTITUTE</p>
         </div>
     </div>
 
+    
     <script>
-    function smoothScroll(target, duration) {
-    var targetPosition = document.querySelector(target).offsetTop;
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
-    var startTime = null;
+        let scrollSlide = document.getElementById('scrollSlide');
+        function smoothScroll(target, duration) {
+            var targetPosition = document.querySelector(target).offsetTop;
+            var startPosition = window.pageYOffset;
+            var distance = targetPosition - startPosition;
+            var startTime = null;
 
-        function mobileScroll(){
-            document.querySelector('#slide1').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+            function mobileScroll() {
+                document.querySelector('#slide1').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                var timeElapsed = currentTime - startTime;
+                var run = ease(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
         }
 
-    function animation(currentTime) {
-        if(startTime === null) startTime = currentTime;
-        var timeElapsed = currentTime - startTime;
-        var run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if(timeElapsed < duration) requestAnimationFrame(animation);
-    }
-    
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-    }
-    
-    requestAnimationFrame(animation);
-}
+        var section1 = document.querySelector('.section1');
+        section1.addEventListener('click', function () {
+            smoothScroll('.section2', 1000);
 
-var section1 = document.querySelector('.section1');
-section1.addEventListener('click', function() {
-    smoothScroll('.section2', 1000);
-    
-});
+        });
 
 
-</script>
-<!-- Include the polyfill -->
-<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
-<script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+        function scrollRightt(){
+            scrollSlide.scrollLeft+=332;
+        }
+        function scrollLeftt(){
+            scrollSlide.scrollLeft-=332;
+        }
+       
+
+    </script>
+    <!-- Include the polyfill -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
 
 
 </body>
