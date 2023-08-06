@@ -28,7 +28,7 @@
 
     <!-- HR Form for Mobile  -->
     <div class="absolute w-full h-full flex md:hidden justify-end items-end"><button
-            class=" text-xs flex items-center space-x-1 font-bold bg-white py-1 px-1 transform mr-4 mb-20 translate-x-1/2 rounded-sm -rotate-90 text-[#070A52] uppercase fixed">
+            class=" text-xs flex items-center space-x-1 font-bold bg-white py-1 px-1 transform mr-4 mb-52 translate-x-1/2 rounded-sm -rotate-90 text-[#070A52] uppercase fixed">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -69,7 +69,7 @@
 
     <!-- Policies -->
     <!-- Title  -->
-    <div class="flex flex-col justify-center items-center h-36">
+    <div class="flex flex-col justify-center items-center h-36 z-20 bg-white">
         <h1 class="text-3xl md:text-5xl font-semibold text-[#2E3840] mb-3 md:mb-5">Our Policy</h1>
         <p class="text-[#776d6d] text-sm w-10/12 mx-auto text-center md:text-lg font-semibold">We are committed to creating a diverse, inclusive, and safe environment for all our employees</p>
     </div>
@@ -79,21 +79,39 @@
         <button class="hidden md:block absolute top-1/2 right-8 " onclick="scrollRightt()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 shadow-lg shadow-gray-500 p-1 rounded-full bg-white" >         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg></button>
 
 
-        <div id="scrollSlide" class="rounded-lg scroll-smooth pb-8 md:pb-0 scrollbar-h space-x-2 b-scroll-track b-scroll-thumb w-full md:w-11/12 mx-auto items-center overflow-x-scroll scroll flex scrollbar-w-0">
+        <div id="scrollSlide" class="rounded-lg scroll-smooth pb-8 md:py-0 scrollbar-h  space-x-2 b-scroll-track b-scroll-thumb w-full md:w-11/12 mx-auto items-center overflow-x-scroll scroll flex scrollbar-w-0">
             <div
             class="ml-4 flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
             <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
                 src="slide Images/conference.png" alt="" />
-            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
-                <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
-                    Card title
+            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 px-6 pt-4 w-44 md:w-auto">
+                <h5 class="mb-2 text-base uppercase md:text-xl font-medium text-neutral-800 ">
+                    Conference Publication <br>
+                    <span class="text-[7px] md:text-xs ">(Max Partipation Support / Year)</span>
                 </h5>
-                <p class="mb-4 text-base text-neutral-600 ">
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This content is a little bit longer.
+                <p class=" text-base text-neutral-600 ">
+                    <table>
+                        <tbody class="text-xs md:text-sm">
+                            <tr>
+                                <td>Professor :</td>
+                                <td>&#8377;50,000</td>
+                            </tr>
+                            <tr>
+                                <td>Asso. Prof. :</td>
+                                <td>&#8377;35,000</td>
+                            </tr>
+                            <tr>
+                                <td>Asst. Prof. :</td>
+                                <td>&#8377;25,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </p>
-                <p class="text-xs text-neutral-500 ">
-                    Last updated 3 mins ago
+                <p class="text-[8px] text-neutral-900 text-center capitalize ">
+                    Incentive for best paper award: <span class="text-red-500">&#8377;4000</span>
+                </p>
+                <p class="text-[6px] text-neutral-500 text-center ">
+                    For Registeration Fee & TA/DA. <br>should have ISBN
                 </p>
             </div>
         </div>
@@ -101,18 +119,47 @@
             class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
             <img class=" rounded-t-lg object-cover h-auto !rounded-none !rounded-l-lg"
                 src="slide Images/book.png" alt="" />
-            <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 p-6 w-44 md:w-auto">
-                <h5 class="mb-2 text-xl font-medium text-neutral-800 ">
-                    Card title
-                </h5>
-                <p class="mb-4 text-base text-neutral-600 ">
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This content is a little bit longer.
-                </p>
-                <p class="text-xs text-neutral-500 ">
-                    Last updated 3 mins ago
-                </p>
-            </div>
+                <div class="flex flex-col justify-start overflow-auto scrollbar-w-0 px-6 pt-4 w-44 md:w-auto">
+                    <h5 class="mb-2 text-base uppercase md:text-xl font-medium text-neutral-800 ">
+                        journal Publication <br>
+                        <span class="text-[7px] md:text-xs ">(Incentive per article)</span>
+                    </h5>
+                    <p class=" text-base text-neutral-600 ">
+                        <table>
+                            <tbody class="text-[7px] md:text-sm">
+                                <tr class="">
+                                    <th></th>
+                                    <th class="">| / || Authors</th>
+                                    <th>2nd Author</th>
+                                    <th>3/4 Author</th>
+                                </tr>
+                                <tr>
+                                    <td class="">WOS/ SCI / SCIE :</td>
+                                    <td>&#8377;5,000</td>
+                                    <td>&#8377;2,000</td>
+                                    <td>&#8377;1,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Scopus :</td>
+                                    <td>&#8377;3,000</td>
+                                    <td>&#8377;1,000</td>
+                                    <td>&#8377;500</td>
+                                </tr>
+                                <tr>
+                                    <td>UGC Care :</td>
+                                    <td>&#8377;2,000</td>
+                                    <td>&#8377;500</td>
+                                    <td>&#8377;250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    
+                    <p class="text-[6px] text-neutral-500 text-center ">
+                        <span class="text-red-400">*&nbsp;</span>Faculty / Supervisor is First Author <br>
+                        <span class="text-red-400">**&nbsp;</span>First / Second / Third author from another Institution
+                    </p>
+                </div>
         </div>
         <div
         class=" flex-shrink-0 h-52 flex rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] shadow-gray-300 max-w-xl flex-row">
