@@ -133,3 +133,7 @@
 .b-scroll-thumb::-webkit-scrollbar-thumb:hover {
 	background: #cc0000;
 }
+
+.box-shadow{
+	box-shadow: black 10px;
+}
